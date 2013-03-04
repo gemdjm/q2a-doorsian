@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+   <title>Q2A</title>
+   <link rel="stylesheet" href="main.css" type="text/css" />
+   <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+   <script type="text/javascript" src="globals.js"></script>
+   <script type="text/javascript" src="data.js"></script>
+   <script type="text/javascript" src="main.js"></script>
+   <script type="text/javascript" src="subject.js"></script>
+   <script type="text/javascript" src="layout.js"></script>
+   <script type="text/javascript" src="sizing.js"></script>
+   <script type="text/javascript" src="map.js"></script>
+   <script type="text/javascript" src="help.js"></script>
+   <script type="text/javascript" src="events.js"></script>
+   <script type="text/javascript" src="subs.js"></script>
+</head>
+
+<body>
+   <div id="divOverall">
+ 	   <div id="divMainPage" data-role="page">
+
+            <div id="divTop">
+                <div id="mainHeader" class="header" onclick="_goHome()" >
+	                <h1 id="h1Title" ><span id="spnSubject" /></h1>
+                </div>
+      		
+                <div id="mainGap1" >&nbsp;</div>
+      		
+                <div id="divProgress" class="centre">
+		             <table id="tblProgress">
+		                <tr id="trProgress">
+		                   <th id="thP0" /><th id="thP1" /><th id="thP2" /><th id="thP3" /><th id="thP4" />
+		                   <th id="thP5" /><th id="thP6" /><th id="thP7" /><th id="thP8" /><th id="thP9" />
+		                </tr>
+		             </table>
+	             </div>
+            </div>
+   	   
+            <div id="mainGap2" >&nbsp;</div>
+         
+            <div id="divNotes" onclick="_goHome()" >
+                <div id="divNotesInner" ></div>
+                <div id="divList"><table id="tblList"></table></div>
+            </div>
+
+            <div id="divMainContent" class="mainContent">
+                <div id="divQuestion" >
+                    <img id="imgQuestion" src="start.jpg" height="50" />
+                    <span id="spnCountingRepeats" class="middle" />
+                    <div class="centre" ><span id="spnQuestionText" /></div>
+                </div>
+                <div id="divAnswers" >
+	                <div id="divMapArea">
+	                    <img id="imgMap" src="Maps/France.jpg" alt="map" />
+	                    <img id="redSpot" src="img/RedCircle.gif" class="ABC" />
+	                    <img id="blueSpot" src="img/BlueCircle.gif" class="ABC" />
+	                    <img id="greenSpot" src="img/GreenCircle.gif" class="ABC" />
+	                </div>
+                    <div id="divAnswersList">
+	                    <ul id="mainList">
+		                    <li id="li1" onclick="_itemClick()">&nbsp;</li>
+		                    <li id="li2" onclick="_itemClick()">&nbsp;</li>
+		                    <li id="li3" onclick="_itemClick()">&nbsp;</li>
+	                    </ul>
+	                </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="divDebug" class="silver" ><span id="debugInfo">&nbsp;</span>&nbsp;</div>
+		        <!--<div id="divDeb"></div>-->
+	        </div>
+	         
+		</div>
+         
+   	    <div id="divResults" class="popup" onclick="_nextSession()" > 
+		      <div class="centre"> <h3>Results</h3> </div> 
+		      <div id="divResultsText"> 
+			      <ul>
+				      <li><h3>Time taken (seconds):<span id="spnResultsTime" /></h3></li>
+				      <li><h3>Number of questions: <span id="spnResultsCount" /> seconds</h3></li>
+				      <li><h3>Retries: <span id="spnResultsRetries" /></h3></li>
+				      <li><h3>Score: <span id="spnScore" /></h3></li>
+			      </ul>
+		      </div> 
+		      <div class="OK" >OK</div>
+	    </div> 
+   	   
+        <div id="divBlack">
+            orientation change
+        </div>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id = "com.gemstep.q2a-Doors"
+	version   = "0.0.7" 
+	versionCode ="7" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Q2A Doors</name>
+
+    <description>Q2A Doors - questions with multiple-choice answers - 
+Hear The Doors Language
+Subjects include : Doorsian Language, Doorsian to English List, English to Doorsian List, What is Q2A ?</description>
+	<icon src="icon.png" />
+	<preference name="permissions" value="none"/>
+
+    <author href="www.gemstep.com" email="q2a.Doors@gemstep.com">
+       Dave Moore 
+    </author>
+
+</widget>

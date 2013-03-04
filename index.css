@@ -1,0 +1,28 @@
+﻿@media only screen and (orientation: landscape) {
+#indexPage	{ position: absolute; left: 20px; top: 10px; width: 510px; height: 320px;  }
+}
+
+@media only screen and (orientation: portrait) {
+#indexPage	{ position: absolute; left: 10px; top: 5px; width: 300px; height: 550px;  }
+}
+
+body		{ font-family: Droid Sans, Verdana, Arial; width:100%; margin: 0; padding: 0; background-color:black; }		
+html		{ width:100%; margin: 0; padding: 0; }
+p			{ margin: 5px 10px }
+table       { border-spacing:0; border-collapse:collapse; width:100%; }
+
+.header h1	{ padding: 0px; text-shadow: 0.1em 0.1em #aaa; margin: 3px 0px;
+						font-size: 25px;	font-family: Droid Sans, Verdana, Arial; }
+
+.logo		{ height: 50px; }				
+.indexLeft  { width: 80%; }
+.subjectIndex td		{ padding: 3px 0px; text-align: center; }
+.subjectIndex input		{ padding: 10px; }
+
+#indexContent li	{ margin: 10px; padding: 10px 0px 0px 0px; border: solid 1px #393; 
+                        font-size: 24px; list-style: none; 
+					    vertical-align: middle; background-color: #dfd;
+						border-radius: 30px; -webkit-border-radius: 25px; -moz-border-radius: 15px; }
+#indexPage	{ background-color: #F5DEB3; text-align: center;
+						border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
+
